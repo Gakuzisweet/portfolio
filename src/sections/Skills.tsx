@@ -10,7 +10,7 @@ export function Skills() {
           index="03"
           eyebrow="Engineering Skills"
           title="What I work with"
-          description="Every skill listed here is backed by one of the projects above — no percentage bars, just tools and techniques I've actually used."
+          description="Every skill listed here is backed by one of the projects above, no percentage bars, just tools and techniques I've actually used."
         />
 
         <div className="grid gap-8 sm:grid-cols-3">

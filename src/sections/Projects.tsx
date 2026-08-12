@@ -15,7 +15,7 @@ export function Projects() {
           index="02"
           eyebrow="Featured Projects"
           title="Things I've built"
-          description="Each project below is a real design — the problem it solves, the engineering decisions behind it, and what actually happened when it hit hardware. Click a card for the full case study."
+          description="Each project below is a real design: the problem it solves, the engineering decisions behind it, and what actually happened when it hit hardware. Click a card for the full case study."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

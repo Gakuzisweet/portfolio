@@ -26,7 +26,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-4 text-mono text-sm text-accent sm:text-base">
-          {site.role} — {site.focusAreas.join(" • ")}
+          {site.role}: {site.focusAreas.join(" • ")}
         </p>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">

@@ -18,6 +18,6 @@ export const timeline: TimelineEntry[] = [
     period: "[ADD DATES]",
     title: "[ADD: Co-op work term, engineering club, or research position]",
     place: "[ADD: organization]",
-    detail: "[ADD PROJECT DESCRIPTION — role and what you worked on.]",
+    detail: "[ADD PROJECT DESCRIPTION: role and what you worked on.]",
   },
 ];

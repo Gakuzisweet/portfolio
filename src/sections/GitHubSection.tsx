@@ -15,7 +15,7 @@ export function GitHubSection() {
           index="06"
           eyebrow="GitHub"
           title="Explore the source"
-          description="Every project on this site is version-controlled and public — the commit history, testbenches, and design files are the real record of how it was built."
+          description="Every project on this site is version-controlled and public: the commit history, testbenches, and design files are the real record of how it was built."
         />
 
         <a

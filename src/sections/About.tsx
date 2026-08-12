@@ -11,8 +11,8 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
           <p className="text-lg leading-relaxed text-text-muted">
             I'm {site.firstName}, an {site.role.toLowerCase()} at the {site.university}. I like
-            engineering problems where a decision made on paper — an instruction-set choice, a
-            component pick — has a direct, testable consequence in real hardware: a signal on an
+            engineering problems where a decision made on paper (an instruction-set choice, a
+            component pick) has a direct, testable consequence in real hardware: a signal on an
             oscilloscope, a passing testbench, a byte arriving over UART.
           </p>
 

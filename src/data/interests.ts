@@ -6,7 +6,7 @@ export interface Interest {
 export const interests: Interest[] = [
   {
     title: "Digital Systems & Computer Architecture",
-    detail: "Custom ISA design and CPU datapaths — how instructions actually become hardware behavior.",
+    detail: "Custom ISA design and CPU datapaths: how instructions actually become hardware behavior.",
   },
   {
     title: "PCB Design & Electronics",
@@ -22,6 +22,6 @@ export const interests: Interest[] = [
   },
   {
     title: "UAV / Flight-Control Systems",
-    detail: "Flight-controller hardware design — the sensor and compute stack behind stable flight.",
+    detail: "Flight-controller hardware design: the sensor and compute stack behind stable flight.",
   },
 ];
