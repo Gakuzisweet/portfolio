@@ -1,11 +1,16 @@
 import { Container } from "../components/ui/Container";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { skillCategories } from "../data/skills";
 
 export function Skills() {
   return (
-    <section id="skills" className="scroll-mt-16 border-b border-border py-20 sm:py-24">
-      <Container>
+    <section
+      id="skills"
+      className="relative scroll-mt-16 overflow-hidden border-b border-border py-20 sm:py-24"
+    >
+      <CircuitBackground variant="c" />
+      <Container className="relative">
         <SectionHeading
           index="03"
           eyebrow="Engineering Skills"

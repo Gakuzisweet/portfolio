@@ -3,14 +3,19 @@ import { Container } from "../components/ui/Container";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { ProjectCard } from "../components/ProjectCard";
 import { ProjectModal } from "../components/ProjectModal";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { projects, type Project } from "../data/projects";
 
 export function Projects() {
   const [active, setActive] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="scroll-mt-16 border-b border-border py-20 sm:py-24">
-      <Container>
+    <section
+      id="projects"
+      className="relative scroll-mt-16 overflow-hidden border-b border-border py-20 sm:py-24"
+    >
+      <CircuitBackground variant="b" flip />
+      <Container className="relative">
         <SectionHeading
           index="02"
           eyebrow="Featured Projects"

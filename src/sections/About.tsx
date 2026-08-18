@@ -1,11 +1,16 @@
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { Container } from "../components/ui/Container";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { site } from "../data/site";
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-16 border-b border-border py-20 sm:py-24">
-      <Container>
+    <section
+      id="about"
+      className="relative scroll-mt-16 overflow-hidden border-b border-border py-20 sm:py-24"
+    >
+      <CircuitBackground variant="a" />
+      <Container className="relative">
         <SectionHeading index="01" eyebrow="About" title="Who I am" />
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">

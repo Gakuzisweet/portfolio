@@ -3,12 +3,14 @@ import { Container } from "../components/ui/Container";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { Button } from "../components/ui/Button";
 import { GithubIcon, LinkedinIcon } from "../components/icons";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { site } from "../data/site";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-16 py-20 sm:py-24">
-      <Container>
+    <section id="contact" className="relative scroll-mt-16 overflow-hidden py-20 sm:py-24">
+      <CircuitBackground variant="d" />
+      <Container className="relative">
         <SectionHeading index="07" eyebrow="Contact" title="Let's build something" />
 
         <div className="rounded-xl border border-border bg-bg-raised p-6 sm:p-10">

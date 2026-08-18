@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "../components/ui/Container";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { GithubIcon } from "../components/icons";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { site } from "../data/site";
 import { projects } from "../data/projects";
 
@@ -9,8 +10,12 @@ const repos = projects.filter((p) => p.github);
 
 export function GitHubSection() {
   return (
-    <section id="github" className="scroll-mt-16 border-b border-border py-20 sm:py-24">
-      <Container>
+    <section
+      id="github"
+      className="relative scroll-mt-16 overflow-hidden border-b border-border py-20 sm:py-24"
+    >
+      <CircuitBackground variant="b" />
+      <Container className="relative">
         <SectionHeading
           index="06"
           eyebrow="GitHub"

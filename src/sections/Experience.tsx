@@ -1,11 +1,16 @@
 import { Container } from "../components/ui/Container";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import { CircuitBackground } from "../components/CircuitBackground";
 import { timeline } from "../data/experience";
 
 export function Experience() {
   return (
-    <section id="experience" className="scroll-mt-16 border-b border-border py-20 sm:py-24">
-      <Container>
+    <section
+      id="experience"
+      className="relative scroll-mt-16 overflow-hidden border-b border-border py-20 sm:py-24"
+    >
+      <CircuitBackground variant="a" flip />
+      <Container className="relative">
         <SectionHeading index="05" eyebrow="Experience & Education" title="Timeline" />
 
         <ol className="relative space-y-8 border-l border-border pl-8">
