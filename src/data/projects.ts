@@ -122,7 +122,7 @@ export const projects: Project[] = [
       { label: "Target", value: "Zybo Z7-10 (Zynq-7000)" },
     ],
 
-    github: "https://github.com/Gakuzisweet/Bare-metal-16-bit-CPU-design",
+    github: "https://github.com/mohamednurZ/Bare-metal-16-bit-CPU-design",
 
     codeSnippet: {
       lang: "systemverilog",
@@ -202,7 +202,7 @@ assign regfile_rs2_addr = use_branch_regs ? b_rs2 : (mem_write ? rd : rs2);`,
       { label: "Status", value: "Schematic + layout complete, not yet fabricated" },
     ],
 
-    github: "https://github.com/Gakuzisweet/Maverick",
+    github: "https://github.com/mohamednurZ/Maverick",
   },
 
   {

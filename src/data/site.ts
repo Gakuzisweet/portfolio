@@ -18,8 +18,8 @@ export const site = {
   gradYear: "2029",
 
   email: "mnur.zeinu@gmail.com",
-  github: "https://github.com/Gakuzisweet",
-  githubUsername: "Gakuzisweet",
+  github: "https://github.com/mohamednurZ",
+  githubUsername: "mohamednurZ",
   linkedin: "https://www.linkedin.com/in/mohamednur-zeinu",
 
   // Drop your real PDF at /public/resume.pdf — see README for instructions.
