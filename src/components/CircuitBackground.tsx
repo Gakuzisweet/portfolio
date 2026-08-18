@@ -87,15 +87,15 @@ export function CircuitBackground({
       <div
         className={cn(
           "absolute inset-0 bg-grid",
-          isHero ? "mask-fade-b opacity-70" : "opacity-20"
+          isHero ? "mask-fade-b opacity-70" : "opacity-40"
         )}
       />
 
       <svg
         className={cn(
           "absolute inset-0 h-full w-full",
-          isHero ? "mask-fade-b opacity-[0.55]" : "opacity-[0.28]",
-          flip && "-scale-x-100"
+          isHero && "mask-fade-b",
+          flip && "scale-x-[-1]"
         )}
         viewBox="0 0 1200 700"
         fill="none"
@@ -138,25 +138,25 @@ export function CircuitBackground({
         ) : (
           set && (
             <>
-              <g stroke="var(--color-accent)" strokeWidth="1.5" strokeOpacity="0.3">
+              <g stroke="var(--color-accent)" strokeWidth="1.75" strokeOpacity="0.5">
                 {set.traces.map((d) => (
                   <path key={d} d={d} />
                 ))}
               </g>
-              <g fill="var(--color-accent)" fillOpacity="0.5">
+              <g fill="var(--color-accent)" fillOpacity="0.75">
                 {set.pads.map(([cx, cy]) => (
-                  <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="3" />
+                  <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="3.5" />
                 ))}
               </g>
               <path
                 d={set.signal}
                 stroke="var(--color-signal)"
-                strokeWidth="1.5"
-                strokeOpacity="0.32"
+                strokeWidth="2"
+                strokeOpacity="0.55"
                 strokeDasharray="7 6"
                 className="animate-dash"
               />
-              <circle r="3.5" fill="var(--color-signal)" opacity="0.8">
+              <circle r="4.5" fill="var(--color-signal)">
                 <animateMotion dur="9s" repeatCount="indefinite" path={set.signal} />
               </circle>
             </>
