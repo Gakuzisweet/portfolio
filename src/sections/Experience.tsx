@@ -25,9 +25,11 @@ export function Experience() {
               </span>
               <h3 className="mt-1 text-base font-semibold text-text">{entry.title}</h3>
               <p className="text-sm text-text-dim">{entry.place}</p>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-text-muted">
-                {entry.detail}
-              </p>
+              {entry.detail && (
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-text-muted">
+                  {entry.detail}
+                </p>
+              )}
             </li>
           ))}
         </ol>

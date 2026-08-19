@@ -2,11 +2,16 @@ export interface TimelineEntry {
   period: string;
   title: string;
   place: string;
-  detail: string;
+  detail?: string;
 }
 
 // Most recent first. Add work terms, clubs, or coursework as new entries.
 export const timeline: TimelineEntry[] = [
+  {
+    period: "Sept 2025 – Present",
+    title: "Radio Frequency Team Member",
+    place: "AlbertaSat",
+  },
   {
     period: "2025 – 2026",
     title: "ATCO Centennial Award",
