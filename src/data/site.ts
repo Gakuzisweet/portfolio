@@ -17,7 +17,7 @@ export const site = {
   program: "B.Sc. Electrical Engineering (Co-op)",
   gradYear: "2029",
 
-  email: "mnur.zeinu@gmail.com",
+  email: "mzeinu@ualberta.ca",
   github: "https://github.com/mohamednurZ",
   githubUsername: "mohamednurZ",
   linkedin: "https://www.linkedin.com/in/mohamednur-zeinu",
@@ -46,7 +46,8 @@ export const site = {
     },
     {
       label: "What I'm looking for",
-      detail: "A Winter 2027 engineering internship in hardware, embedded systems, or electronics.",
+      detail:
+        "An 8-month engineering co-op starting January 2027, in hardware, embedded systems, or electronics.",
     },
   ],
 } as const;
