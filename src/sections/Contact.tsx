@@ -11,7 +11,7 @@ export function Contact() {
     <section id="contact" className="relative scroll-mt-16 overflow-hidden py-20 sm:py-24">
       <CircuitBackground variant="d" />
       <Container className="relative">
-        <SectionHeading index="07" eyebrow="Contact" title="Let's build something" />
+        <SectionHeading index="06" eyebrow="Contact" title="Let's build something" />
 
         <div className="rounded-xl border border-border bg-bg-raised p-6 sm:p-10">
           <p className="max-w-xl text-base leading-relaxed text-text-muted">

@@ -11,7 +11,7 @@ export function Interests() {
     >
       <CircuitBackground variant="d" flip />
       <Container className="relative">
-        <SectionHeading index="04" eyebrow="Engineering Interests" title="Where I want to grow" />
+        <SectionHeading index="03" eyebrow="Engineering Interests" title="Where I want to grow" />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {interests.map((interest) => (

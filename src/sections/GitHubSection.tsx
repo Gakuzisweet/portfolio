@@ -17,7 +17,7 @@ export function GitHubSection() {
       <CircuitBackground variant="b" />
       <Container className="relative">
         <SectionHeading
-          index="06"
+          index="05"
           eyebrow="GitHub"
           title="Explore the source"
           description="Every project on this site is version-controlled and public: the commit history, testbenches, and design files are the real record of how it was built."

@@ -11,7 +11,7 @@ export function Experience() {
     >
       <CircuitBackground variant="a" flip />
       <Container className="relative">
-        <SectionHeading index="05" eyebrow="Experience & Education" title="Timeline" />
+        <SectionHeading index="04" eyebrow="Experience & Education" title="Timeline" />
 
         <ol className="relative space-y-8 border-l border-border pl-8">
           {timeline.map((entry) => (

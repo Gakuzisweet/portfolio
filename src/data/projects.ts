@@ -23,6 +23,8 @@
 import t16ElaboratedSchematic from "../assets/projects/t16-elaborated-schematic.png";
 import maverickSchematic1 from "../assets/projects/maverick-schematic-1.png";
 import maverickSchematic2 from "../assets/projects/maverick-schematic-2.png";
+import maverickPcb2d from "../assets/projects/maverick-pcb-2d.png";
+import maverickPcb3d from "../assets/projects/maverick-pcb-3d.png";
 
 export type ProjectStatus = "featured" | "secondary" | "coming-soon";
 
@@ -253,6 +255,16 @@ assign regfile_rs2_addr = use_branch_regs ? b_rs2 : (mem_write ? rd : rs2);`,
     github: "https://github.com/mohamednurZ/Maverick",
 
     images: [
+      {
+        src: maverickPcb3d,
+        alt: "3D render of the Maverick flight-controller PCB, showing the STM32 MCU, connectors, and mounted components.",
+        caption: "3D render of the completed layout, generated in Altium Designer.",
+      },
+      {
+        src: maverickPcb2d,
+        alt: "2D top-down view of the Maverick flight-controller PCB layout with copper traces and silkscreen visible.",
+        caption: "Top-side PCB layout: copper routing and silkscreen.",
+      },
       {
         src: maverickSchematic1,
         alt: "Maverick flight-controller schematic sheet 1: LED indicators, power regulator, EEPROM, IMU, high-speed crystal, I2C pull-ups, decoupling capacitors, and the STM32F405RGT6 MCU.",

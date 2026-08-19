@@ -12,7 +12,7 @@ export function Skills() {
       <CircuitBackground variant="c" />
       <Container className="relative">
         <SectionHeading
-          index="03"
+          index="02"
           eyebrow="Engineering Skills"
           title="What I work with"
           description="Every skill listed here is backed by one of the projects above, no percentage bars, just tools and techniques I've actually used."
