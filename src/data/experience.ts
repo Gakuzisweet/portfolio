@@ -8,7 +8,7 @@ export interface TimelineEntry {
 // Most recent first. Add work terms, clubs, or coursework as new entries.
 export const timeline: TimelineEntry[] = [
   {
-    period: "Sept 2025 – Present",
+    period: "Sep 2025 – Present",
     title: "Radio Frequency Team Member",
     place: "AlbertaSat",
   },
@@ -31,10 +31,11 @@ export const timeline: TimelineEntry[] = [
     detail: "Recognized five times by the University of Alberta Pre-Statistics Students' Association.",
   },
   {
-    period: "2023 – Present",
+    period: "Jan 2023 – Sep 2024",
     title: "Member and Board (Nominee)",
     place: "CIIRSA, Fort McMurray",
-    detail: "[ADD: what CIIRSA does and your role/contributions on the board.]",
+    detail:
+      "Delivered workshops and seminars for newcomers to Fort McMurray and conducted outreach calls to renew members' annual memberships.",
   },
   {
     period: "Expected 2029",

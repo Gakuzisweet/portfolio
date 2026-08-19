@@ -27,7 +27,11 @@ export const site = {
 
   // Hero intro — grounded in the two shipped projects (custom CPU + custom PCB).
   intro:
-    "Electrical Engineering student who builds hardware from first principles: a 16-bit CPU with a custom instruction set, running on real FPGA hardware, and a flight-controller PCB designed from schematic to layout. I like taking a system from a spec on paper to something you can put a multimeter or a UART cable on. Looking for an 8-month engineering co-op starting January 2027, in hardware, embedded systems, or electronics.",
+    "Electrical Engineering student who builds hardware from first principles: a 16-bit CPU with a custom instruction set, running on real FPGA hardware, and a flight-controller PCB designed from schematic to layout. I like taking a system from a spec on paper to something you can put a multimeter or a UART cable on.",
+
+  // Rendered as its own line under the intro paragraph in the Hero section.
+  lookingFor:
+    "Looking for an 8-month engineering co-op starting January 2027, in hardware, embedded systems, electronics, instrumentation, or power.",
 
   aboutHighlights: [
     {

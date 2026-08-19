@@ -16,8 +16,8 @@ export function Contact() {
         <div className="rounded-xl border border-border bg-bg-raised p-6 sm:p-10">
           <p className="max-w-xl text-base leading-relaxed text-text-muted">
             I'm looking for a Winter 2027 engineering internship in hardware, embedded systems,
-            or electronics. If you're hiring, or just want to talk about CPU design or PCB
-            layout, reach out.
+            electronics, instrumentation, or power. If you're hiring, or just want to talk about
+            CPU design or PCB layout, reach out.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">

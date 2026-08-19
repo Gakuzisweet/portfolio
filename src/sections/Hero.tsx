@@ -33,6 +33,10 @@ export function Hero() {
           {site.intro}
         </p>
 
+        <p className="mt-3 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">
+          {site.lookingFor}
+        </p>
+
         <div className="mt-9 flex flex-wrap gap-3">
           <Button href="#projects" variant="primary" icon={<ArrowRight size={16} />}>
             View Projects

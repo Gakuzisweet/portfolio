@@ -20,7 +20,7 @@
 //      the full case-study view.
 // ---------------------------------------------------------------------------
 
-import t16ElaboratedSchematic from "../assets/projects/t16-elaborated-schematic.png";
+import t16ElaboratedSchematic from "../assets/projects/t16-elaborated-schematic-v2.png";
 import maverickSchematic1 from "../assets/projects/maverick-schematic-1.png";
 import maverickSchematic2 from "../assets/projects/maverick-schematic-2.png";
 import maverickPcb2d from "../assets/projects/maverick-pcb-2d.png";
@@ -206,12 +206,10 @@ assign regfile_rs2_addr = use_branch_regs ? b_rs2 : (mem_write ? rd : rs2);`,
     results: [
       "Design Rule Check across 13 constraint categories completed on the full 86-component layout with 0 short-circuit violations and 100% net routing completion (0 unrouted nets).",
       "Built and validated a real-time flight-stabilization algorithm in Python: a complementary filter (98%/2% weighting) fusing BMI088 accelerometer and gyroscope data to estimate pitch/roll orientation at a 50 Hz loop rate.",
-      "[ADD: fabrication and bring-up results (continuity checks, power-on behavior, sensor readings) once the board is built and tested.]",
     ],
 
     learned: [
       "How much of PCB layout correctness depends on verification done by hand: building 14 custom footprints from datasheets and running a full DRC surfaced issues a stock-library shortcut would have hidden until fabrication.",
-      "[ADD PROJECT LEARNINGS: to be filled in once the board is fabricated and tested.]",
     ],
 
     hardware: [
