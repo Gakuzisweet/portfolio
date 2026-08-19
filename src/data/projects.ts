@@ -5,6 +5,19 @@
 // Fields marked "[ADD ...]" are placeholders where real information was not
 // available and should be filled in with real, accurate content — never
 // invented specs, results, or claims.
+//
+// TO ADD PHOTOS to a project:
+//   1. Put the image file(s) in src/assets/projects/ (create the folder).
+//   2. Import them at the top of this file, e.g.:
+//        import maverickRender from "../assets/projects/maverick-render.png";
+//   3. Add an `images` array to that project's object:
+//        images: [
+//          { src: maverickRender, alt: "Maverick PCB, top side, 3D render" },
+//        ],
+//      The first image doubles as the card's cover photo. Always write a
+//      real, descriptive `alt` (screen readers and quick-skimming recruiters
+//      both rely on it). An optional `caption` renders under the image in
+//      the full case-study view.
 // ---------------------------------------------------------------------------
 
 export type ProjectStatus = "featured" | "secondary" | "coming-soon";

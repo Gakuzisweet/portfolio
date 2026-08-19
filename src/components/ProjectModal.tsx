@@ -3,6 +3,7 @@ import { X, ExternalLink } from "lucide-react";
 import type { Project } from "../data/projects";
 import { Badge } from "./ui/Badge";
 import { GithubIcon } from "./icons";
+import { cn } from "../lib/utils";
 
 function CaseStudyBlock({ label, text }: { label: string; text: string }) {
   return (
@@ -93,6 +94,32 @@ export function ProjectModal({
             <X size={18} />
           </button>
         </div>
+
+        {project.images && project.images.length > 0 && (
+          <div
+            className={cn(
+              "grid gap-3 border-b border-border p-6 sm:p-8 sm:pb-0",
+              project.images.length === 1 ? "grid-cols-1" : "sm:grid-cols-2"
+            )}
+          >
+            {project.images.map((image) => (
+              <figure key={image.src} className="overflow-hidden rounded-lg border border-border">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-video w-full bg-bg object-cover"
+                />
+                {image.caption && (
+                  <figcaption className="border-t border-border bg-bg px-3 py-2 text-xs text-text-dim">
+                    {image.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        )}
 
         <div className="grid gap-8 p-6 sm:p-8 md:grid-cols-[1fr_220px]">
           <div className="space-y-7 md:order-1">
