@@ -20,6 +20,10 @@
 //      the full case-study view.
 // ---------------------------------------------------------------------------
 
+import t16ElaboratedSchematic from "../assets/projects/t16-elaborated-schematic.png";
+import maverickSchematic1 from "../assets/projects/maverick-schematic-1.png";
+import maverickSchematic2 from "../assets/projects/maverick-schematic-2.png";
+
 export type ProjectStatus = "featured" | "secondary" | "coming-soon";
 
 export interface Spec {
@@ -141,11 +145,19 @@ export const projects: Project[] = [
       { label: "Cycle model", value: "Single-cycle" },
       { label: "I/O", value: "Memory-mapped UART TX (address 0xFFF)" },
       { label: "Target", value: "Zybo Z7-10 (Zynq-7000)" },
-      { label: "Clock frequency", value: "[ADD: achieved clock frequency in MHz]" },
-      { label: "FPGA utilization", value: "[ADD: % of FPGA logic resources used]" },
+      { label: "Clock frequency", value: "125 MHz" },
+      { label: "FPGA utilization", value: "0.1% of available logic resources" },
     ],
 
     github: "https://github.com/mohamednurZ/Bare-metal-16-bit-CPU-design",
+
+    images: [
+      {
+        src: t16ElaboratedSchematic,
+        alt: "Elaborated RTL schematic of the T16 CPU from Xilinx Vivado, showing the synthesized datapath modules and their interconnect.",
+        caption: "Elaborated design view from Vivado: the synthesized datapath modules wired together ahead of FPGA implementation.",
+      },
+    ],
 
     codeSnippet: {
       lang: "systemverilog",
@@ -239,6 +251,19 @@ assign regfile_rs2_addr = use_branch_regs ? b_rs2 : (mem_write ? rd : rs2);`,
     ],
 
     github: "https://github.com/mohamednurZ/Maverick",
+
+    images: [
+      {
+        src: maverickSchematic1,
+        alt: "Maverick flight-controller schematic sheet 1: LED indicators, power regulator, EEPROM, IMU, high-speed crystal, I2C pull-ups, decoupling capacitors, and the STM32F405RGT6 MCU.",
+        caption: "Schematic sheet 1/3: power regulation, MCU, and the IMU/EEPROM/crystal support circuitry.",
+      },
+      {
+        src: maverickSchematic2,
+        alt: "Maverick flight-controller schematic sheet 2: magnetometer, SBUS inverter, NAND flash, barometer, connectors, and boot/reset switches.",
+        caption: "Schematic sheet 2/3: magnetometer, barometer, flash storage, SBUS input, and connectors.",
+      },
+    ],
   },
 
   {

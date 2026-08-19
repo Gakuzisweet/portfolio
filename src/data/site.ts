@@ -17,7 +17,7 @@ export const site = {
   program: "B.Sc. Electrical Engineering (Co-op)",
   gradYear: "2029",
 
-  email: "mzeinu@ualberta.ca",
+  email: "mnur.zeinu@gmail.com",
   github: "https://github.com/mohamednurZ",
   githubUsername: "mohamednurZ",
   linkedin: "https://www.linkedin.com/in/mohamednur-zeinu",
@@ -27,7 +27,7 @@ export const site = {
 
   // Hero intro — grounded in the two shipped projects (custom CPU + custom PCB).
   intro:
-    "Electrical Engineering student who builds hardware from first principles: a 16-bit CPU with a custom instruction set, running on real FPGA hardware, and a flight-controller PCB designed from schematic to layout. I like taking a system from a spec on paper to something you can put a multimeter or a UART cable on.",
+    "Electrical Engineering student who builds hardware from first principles: a 16-bit CPU with a custom instruction set, running on real FPGA hardware, and a flight-controller PCB designed from schematic to layout. I like taking a system from a spec on paper to something you can put a multimeter or a UART cable on. Looking for an 8-month engineering co-op starting January 2027, in hardware, embedded systems, or electronics.",
 
   aboutHighlights: [
     {
@@ -43,11 +43,6 @@ export const site = {
       label: "What I enjoy",
       detail:
         "Engineering problems where a design decision on paper (an ISA choice, a component selection) has a direct, testable consequence in hardware.",
-    },
-    {
-      label: "What I'm looking for",
-      detail:
-        "An 8-month engineering co-op starting January 2027, in hardware, embedded systems, or electronics.",
     },
   ],
 } as const;

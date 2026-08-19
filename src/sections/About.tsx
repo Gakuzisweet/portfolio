@@ -1,4 +1,3 @@
-import { SectionHeading } from "../components/ui/SectionHeading";
 import { Container } from "../components/ui/Container";
 import { CircuitBackground } from "../components/CircuitBackground";
 import { site } from "../data/site";
@@ -11,7 +10,7 @@ export function About() {
     >
       <CircuitBackground variant="a" />
       <Container className="relative">
-        <SectionHeading index="01" eyebrow="About" title="Who I am" />
+        <h2 className="mb-10 text-2xl font-semibold text-text sm:mb-12 sm:text-3xl">Who I am</h2>
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
           <p className="text-lg leading-relaxed text-text-muted">
